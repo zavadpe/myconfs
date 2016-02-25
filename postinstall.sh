@@ -8,9 +8,9 @@
 # Downloads file $1 to the $2 location
 downloadFile() {
     link=$1
-    where=$2
-    echo ">> Downloading  $link to $where"
-    wget $link $where
+    file=$2
+    echo ">> Downloading  $link to $file"
+    wget -O $file $link
 }
 
 createDir() {
@@ -20,9 +20,9 @@ createDir() {
 }
 
 # links
-BASHRC=https://github.com/zavadpe/myconf/blob/master/.bashrc
-VIMRC=https://github.com/zavadpe/myconf/blob/master/.vimrc
-GITCONFIG=https://github.com/zavadpe/myconf/blob/master/.gitconfig
+BASHRC=https://raw.githubusercontent.com/zavadpe/myconfs/master/.bashrc
+VIMRC=https://raw.githubusercontent.com/zavadpe/myconfs/master/.vimrc
+GITCONFIG=https://raw.githubusercontent.com/zavadpe/myconfs/master/.gitconfig
 
 # directories
 BIN=$HOME/bin
@@ -31,9 +31,9 @@ PROJECTS=$DEV/projects
 
 echo "> Running postinstall script"
 
-downloadFile $BASHRC $HOME
-downloadFile $VIMRC $HOME
-downloadFile $GITCONFIG $HOME
+downloadFile $BASHRC $HOME/.bashrc
+downloadFile $VIMRC $HOME/.vimrc
+downloadFile $GITCONFIG $HOME/.gitconfig
 
 # Apply .bashrc profile
 . $HOME/.bashrc
@@ -44,4 +44,5 @@ createDir $PROJECTS
 
 # Install misc packages
 sudo apt-get update
-sudo apt-get install terminator vim git gitg preload vlc build-essential 
+sudo apt-get install terminator vim git gitg preload vlc build-essential
+
