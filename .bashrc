@@ -124,10 +124,12 @@ export DEV=$HOME/dev
 export PROJECTS=$DEV/projects
 export ANDROID_STUDIO=$DEV/android-studio
 export ANDROID_SDK=$DEV/android-sdk
+export ANDROID_NDK=$DEV/android-ndk
 # additional ANDROID variables sometimes required
 export ANDROID_SDK_ROOT=$ANDROID_SDK
 export ANDROID_ROOT=$ANDROID_SDK
 export ANDROID_HOME=$ANDROID_SDK
+export ANDROID_NDK_ROOT=$ANDROID_NDK
 export ANDROID_TOOLS=$ANDROID_SDK/tools
 export ANDROID_PLATFORM_TOOLS=$ANDROID_SDK/platform-tools
 
@@ -140,6 +142,8 @@ alias cdd='cd $DEV'
 alias cdh='cd $HOME'
 alias cdp='cd $PROJECTS'
 alias cdm='cd $MAIN_PROJECT'
+alias cdb='cd $HOME_BIN' 
+alias cddo='cd Downloads'
 
 alias la='ls -alh'
 alias p='pwd'

@@ -44,5 +44,5 @@ createDir $PROJECTS
 
 # Install misc packages
 sudo apt-get update
-sudo apt-get install terminator vim git gitg preload vlc build-essential
+sudo apt-get install terminator vim htop git gitg preload vlc build-essential
 
