@@ -20,7 +20,7 @@ createDir() {
 }
 
 # links
-BASHRC=https://raw.githubusercontent.com/zavadpe/myconfs/master/.bashrc
+BASHRC=https://raw.githubusercontent.com/zavadpe/myconfs/master/linux/.bashrc
 VIMRC=https://raw.githubusercontent.com/zavadpe/myconfs/master/.vimrc
 GITCONFIG=https://raw.githubusercontent.com/zavadpe/myconfs/master/.gitconfig
 
